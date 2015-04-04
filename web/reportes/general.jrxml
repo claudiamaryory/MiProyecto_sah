@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="general" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="64f04513-1a49-45f5-92c6-25c6e4c4fe16">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     SERVICIO."ID_SERVICIO" AS SERVICIO_ID_SERVICIO,
+     SERVICIO."ID_USER" AS SERVICIO_ID_USER,
+     SERVICIO."ID_TIPO_SERVI" AS SERVICIO_ID_TIPO_SERVI,
+     SERVICIO."CEDULA_CLIENTE" AS SERVICIO_CEDULA_CLIENTE,
+     SERVICIO."ID_TIPO_ESTADO" AS SERVICIO_ID_TIPO_ESTADO,
+     SERVICIO."FECHA" AS SERVICIO_FECHA,
+     SERVICIO."OBSERVACION" AS SERVICIO_OBSERVACION
+FROM
+     "SAH"."SERVICIO" SERVICIO]]>
+	</queryString>
+	<field name="SERVICIO_ID_SERVICIO" class="java.math.BigDecimal"/>
+	<field name="SERVICIO_ID_USER" class="java.math.BigDecimal"/>
+	<field name="SERVICIO_ID_TIPO_SERVI" class="java.math.BigDecimal"/>
+	<field name="SERVICIO_CEDULA_CLIENTE" class="java.math.BigDecimal"/>
+	<field name="SERVICIO_ID_TIPO_ESTADO" class="java.math.BigDecimal"/>
+	<field name="SERVICIO_FECHA" class="java.sql.Timestamp"/>
+	<field name="SERVICIO_OBSERVACION" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band height="183" splitType="Stretch">
+			<staticText>
+				<reportElement x="33" y="8" width="100" height="20" uuid="89916a43-5210-44a7-86fd-5df78be9598d"/>
+				<text><![CDATA[SERVICIO_ID_SERVICIO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="8" width="100" height="20" uuid="39c24278-4858-4775-b45d-6a47772f4b52"/>
+				<textFieldExpression><![CDATA[$F{SERVICIO_ID_SERVICIO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="36" y="33" width="100" height="20" uuid="205fe357-abee-42b6-a621-41437bb16a66"/>
+				<text><![CDATA[SERVICIO_ID_USER]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="136" y="33" width="100" height="20" uuid="006e26c9-602d-42c4-8cbc-937d2a4bf0a5"/>
+				<textFieldExpression><![CDATA[$F{SERVICIO_ID_USER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="31" y="58" width="100" height="20" uuid="057fee94-53f6-4a26-9ae8-f589a60fb599"/>
+				<text><![CDATA[SERVICIO_ID_TIPO_SERVI]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="131" y="58" width="100" height="20" uuid="c2ac3825-deb5-4823-83f4-12258fca9b1e"/>
+				<textFieldExpression><![CDATA[$F{SERVICIO_ID_TIPO_SERVI}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="82" width="100" height="20" uuid="1249e338-0132-40be-8474-819da4af03f8"/>
+				<text><![CDATA[SERVICIO_CEDULA_CLIENTE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="82" width="100" height="20" uuid="41a70583-2827-49c9-9d59-c8202ac2cbfe"/>
+				<textFieldExpression><![CDATA[$F{SERVICIO_CEDULA_CLIENTE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="31" y="103" width="100" height="20" uuid="4daaa3bf-18f9-4540-bb27-ba9f37ee7159"/>
+				<text><![CDATA[SERVICIO_ID_TIPO_ESTADO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="131" y="103" width="100" height="20" uuid="ea394d50-cf71-4af5-a75b-931fac38da98"/>
+				<textFieldExpression><![CDATA[$F{SERVICIO_ID_TIPO_ESTADO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="33" y="125" width="100" height="20" uuid="c4df7d65-eded-4ae3-883e-76d6a9260be7"/>
+				<text><![CDATA[SERVICIO_FECHA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="125" width="100" height="20" uuid="4e07f8b8-2c1c-43e7-bade-c534cd746e7c"/>
+				<textFieldExpression><![CDATA[$F{SERVICIO_FECHA}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="32" y="149" width="100" height="20" uuid="6b5e9ac6-0d16-41d4-ae4c-b0ee05b850e9"/>
+				<text><![CDATA[SERVICIO_OBSERVACION]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="132" y="149" width="100" height="20" uuid="16f34e86-3a29-4e33-bd1a-eee1ea76c53f"/>
+				<textFieldExpression><![CDATA[$F{SERVICIO_OBSERVACION}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

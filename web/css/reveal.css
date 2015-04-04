@@ -1,0 +1,160 @@
+/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+		
+	.reveal-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background: #000;
+		background: rgba(0,0,0,.8);
+		z-index: 100;
+		display: none;
+		top: 0;
+		left: 0; 
+		}
+       
+        .big-link { 
+                display:block; 
+                margin-top: 30px; 
+		margin-left: -550px;
+                text-align: center; 
+                font-size: 14px; 
+                color: #06f; 
+        } 
+        .cerrarModal { 
+                display:block; 
+                position: 10px;
+                margin-top: 10px; 
+		margin-left: 500px;
+                text-align: center; 
+                font-size: 20px; 
+                color: #ff0000; 
+        } 
+	
+	.reveal-modal {
+		visibility: hidden;
+		top: 100px; 
+		left: 50%;
+		margin-left: -300px;
+		width: 520px;
+		background: #eee url(../img/modal-gloss.png) no-repeat -200px -80px;
+		position: absolute;
+		z-index: 101;
+		padding: 30px 40px 34px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		}
+		
+	.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
+	.reveal-modal.medium 		{ width: 400px; margin-left: -240px;}
+	.reveal-modal.large 		{ width: 600px; margin-left: -340px;}
+	.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+	
+	.reveal-modal .close-reveal-modal {
+		font-size: 22px;
+		line-height: .5;
+		position: absolute;
+		top: 8px;
+		right: 11px;
+		color: #aaa;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+		} 
+         .myBtn { 
+                float: left;
+                margin-right: 5px;
+                margin-top: 10px; 
+                width: 90px;
+                height: 30px;
+                background: #06f; 
+                color: #000;
+                padding: 4px 4px 0 4px;
+                cursor: pointer;
+                text-align: center; 
+                
+               } 
+        .actualizar { 
+                background: #fff url(../img/edit.png) no-repeat;
+                display: block;
+                width: 20px;
+                height: 24px;
+                
+               } 
+        .login { 
+                width: 20px;
+                height: 24px;
+                position: absolute;
+                top: 6px;
+                left: 950px;
+                
+                display: block;
+                max-height: 100%;
+                text-shadow: 0 -1px 0px #222;
+                line-height: 50px;
+                color: #0B0700
+                
+               }  
+        .tituloSer { 
+                position: absolute;
+                top: 80px;
+                left: 500px;
+                color: #000;
+                font-size: 22px;
+                font-family: sans-serif
+                
+               }        
+        .nuevoreg{
+                background: #fff url(../img/agregar.png) no-repeat;
+                margin-left: 980px;/*cuadrar el boton de nuevo cambiar posicion*/
+                display: block;
+                width: 23px;
+                height: 23px;
+                position: absolute;
+                top: 120px;
+            }
+        .eliminar{
+                background: #fff url(../img/eliminar.jpg) no-repeat;
+                display: block;
+                width: 29px;
+                height: 24px;
+            }    
+        a:link {
+            text-decoration: none;
+        }
+      
+        a:hover {
+/*            color: #06f;
+            border: 2px #0000FF solid;
+            border-radius: 4px;*/
+            padding: 1px;
+        }
+        .errorCampos{
+                font-size: 14px; 
+                color: #ff0000;   
+               }  
+        .mensajeok{
+                font-size: 14px; 
+                color: #009999;   
+               }         
+	/*
+		
+	NOTES
+	
+	Close button entity is &#215;
+	
+	Example markup
+	
+	<div id="myModal" class="reveal-modal">
+		<h2>Awesome. I have it.</h2>
+		<p class="lead">Your couch.  I it's mine.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	
+	*/
